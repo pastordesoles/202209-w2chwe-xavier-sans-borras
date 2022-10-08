@@ -6,7 +6,7 @@ const height = 3;
 
 const grid = createMap(width, height);
 
-const cellPositionX = 2;
-const cellPositionY = 2;
+const cellPositionX = 1;
+const cellPositionY = 1;
 const cellInspected = grid[cellPositionX][cellPositionY];
 checkCellMates(grid, cellInspected);
