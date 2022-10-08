@@ -1,4 +1,4 @@
-import Cell from "../cellclass/akakakaka.js";
+import Cell from "../cellclass/Cellclass.js/index.js";
 import generateRandomNumber from "../cellclass/randomNumber.js";
 
 const createMap = (rowCount, columnCount) => {
