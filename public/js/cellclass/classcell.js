@@ -1,6 +1,10 @@
 class Cell {
   alive;
 
+  willBeAlive = false;
+
+  icon;
+
   constructor(randomNumber, x, y) {
     if (randomNumber === 0) {
       this.alive = false;
@@ -9,10 +13,19 @@ class Cell {
     }
     this.x = x;
     this.y = y;
+    this.icon = this.alive ? "*" : "·";
   }
 
-  cellRevives() {
+  cellIsDead() {
+    this.alive = false;
+  }
+
+  cellWillSurvive() {
     this.willBeAlive = true;
+  }
+
+  cellWillDie() {
+    this.willBeAlive = false;
   }
 }
 
