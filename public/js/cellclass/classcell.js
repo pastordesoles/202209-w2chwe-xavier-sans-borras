@@ -1,6 +1,8 @@
 class Cell {
   alive;
 
+  willBeAlive = false;
+
   constructor(randomNumber, x, y) {
     if (randomNumber === 0) {
       this.alive = false;
@@ -11,8 +13,16 @@ class Cell {
     this.y = y;
   }
 
-  cellRevives() {
+  cellIsDead() {
+    this.alive = false;
+  }
+
+  cellWillSurvive() {
     this.willBeAlive = true;
+  }
+
+  cellWillDie() {
+    this.willBeAlive = false;
   }
 }
 
