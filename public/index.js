@@ -1,8 +1,12 @@
 import createMap from "./js/cellgrid/createmap.js";
+import checkCellMates from "./js/checkCellMates/checkCellMates.js";
 
-console.log(createMap(6, 6));
+const width = 3;
+const height = 3;
 
-// if a living cell has more than three neighbors, it dies
-// if a living cell has less than three neighbors, it dies
-// if a dead cell has exactly three neighbors — it comes to life
-// in other cases, the cell remains in its state
+const grid = createMap(width, height);
+
+const cellPositionX = 1;
+const cellPositionY = 1;
+const cellInspected = grid[cellPositionX][cellPositionY];
+checkCellMates(grid, cellInspected);

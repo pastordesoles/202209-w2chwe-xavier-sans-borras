@@ -10,6 +10,10 @@ class Cell {
     this.x = x;
     this.y = y;
   }
+
+  cellRevives() {
+    this.willBeAlive = true;
+  }
 }
 
 export default Cell;
