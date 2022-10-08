@@ -3,6 +3,8 @@ class Cell {
 
   willBeAlive = false;
 
+  icon;
+
   constructor(randomNumber, x, y) {
     if (randomNumber === 0) {
       this.alive = false;
@@ -11,6 +13,7 @@ class Cell {
     }
     this.x = x;
     this.y = y;
+    this.icon = this.alive ? "*" : "·";
   }
 
   cellIsDead() {
