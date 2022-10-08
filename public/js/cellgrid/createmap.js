@@ -1,4 +1,4 @@
-import Cell from "../cellclass/Cellclass.js/index.js";
+import Cell from "../cellclass/classcell.js/index.js.js";
 import generateRandomNumber from "../cellclass/randomNumber.js";
 
 const createMap = (rowCount, columnCount) => {
