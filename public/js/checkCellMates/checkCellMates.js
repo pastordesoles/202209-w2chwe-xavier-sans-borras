@@ -20,8 +20,8 @@ const checkCellMates = (grid, cellToCheck) => {
     if (direction.alive) {
       totalAlive++;
     }
-    return totalAlive;
   });
+  return totalAlive;
 };
 
 export default checkCellMates;

@@ -10,11 +10,11 @@ describe("Given the function checkCellMates", () => {
       const cellPositionX = 1;
       const cellPositionY = 1;
       const cellInspected = grid[cellPositionX][cellPositionY];
-      const expectedResult = true;
+      const expectedResult = 8;
 
       const result = checkCellMates(cellInspected, grid);
 
-      expect(result).toBe(expectedResult);
+      expect(result).toBeLessThanOrEqual(expectedResult);
     });
   });
 });
