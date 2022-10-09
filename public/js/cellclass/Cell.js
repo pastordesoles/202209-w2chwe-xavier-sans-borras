@@ -10,7 +10,6 @@ class Cell {
     }
     this.x = x;
     this.y = y;
-    this.icon = this.alive ? "*" : "·";
   }
 
   cellIsDead() {

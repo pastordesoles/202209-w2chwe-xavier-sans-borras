@@ -1,5 +1,5 @@
 import nextEpoch from "./nextepoch.js";
-import Cell from "../cellclass/classcell.js";
+import Cell from "../cellclass/Cell.js";
 
 describe("Given the function nextEpoch", () => {
   describe("When it receives 3 and a cell", () => {
