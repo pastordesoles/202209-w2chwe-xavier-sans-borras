@@ -1,9 +1,6 @@
 class Cell {
   alive;
-
   willBeAlive = false;
-
-  icon;
 
   constructor(randomNumber, x, y) {
     if (randomNumber === 0) {
