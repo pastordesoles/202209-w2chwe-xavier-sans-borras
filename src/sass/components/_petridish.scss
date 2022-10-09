@@ -11,12 +11,12 @@ main {
     div {
       width: 36px;
       height: 36px;
-      background-color: aliceblue;
-      border: 2px solid red;
+      background-color: #adadad;
+      border: 2px solid #cc0000;
     }
 
     .cell--alive {
-      background-color: red;
+      background-color: #cc0000;
     }
   }
 }
