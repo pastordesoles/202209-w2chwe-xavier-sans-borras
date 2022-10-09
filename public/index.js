@@ -8,8 +8,7 @@ const height = 15;
 
 const playGame = () => {
   const board = createMap(width, height);
-  const spinnerFlat = board.flat(2);
-
+  const cellPatterns = board.flat(2);
   const cellSlots = document.getElementsByClassName("cell");
 
   setInterval(() => {
@@ -19,7 +18,7 @@ const playGame = () => {
         const aliveNeighbors = checkCellMates(board, cell);
         nextEpoch(aliveNeighbors, cell);
 
-        spinnerFlat.forEach((life, index) => {
+        cellPatterns.forEach((life, index) => {
           cellSlots[index].className = "cell";
           if (life.alive) {
             cellSlots[index].classList.toggle("cell--alive");
@@ -29,8 +28,11 @@ const playGame = () => {
         });
       }
     }
+
     updateState(board);
   }, 1000);
 };
 
-playGame();
+document.querySelector(".generate-life").addEventListener("click", () => {
+  playGame();
+});
