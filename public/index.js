@@ -33,12 +33,6 @@ const playGame = () => {
       }
     }
     updateState(board);
-    // currentGeneration++;
-    console.clear();
-    console.log(
-      board.map((value) => value.map((value2) => value2.alive)).join("\n")
-    );
-    // }
   }, 1000);
 };
 
