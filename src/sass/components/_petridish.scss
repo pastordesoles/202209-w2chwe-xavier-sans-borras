@@ -5,12 +5,12 @@ main {
   justify-content: center;
   .petri-dish {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
 
     div {
-      width: 24px;
-      height: 24px;
+      width: 36px;
+      height: 36px;
       background-color: aliceblue;
       border: 2px solid red;
     }

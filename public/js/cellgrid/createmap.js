@@ -1,5 +1,4 @@
 import Cell from "../cellclass/classcell.js";
-// import generateRandomNumber from "../cellclass/randomNumber.js";
 
 const createMap = (rowCount, columnCount) => {
   const map = [];
@@ -9,7 +8,13 @@ const createMap = (rowCount, columnCount) => {
       if (
         (x === 1 && y === 0) ||
         (x === 1 && y === 1) ||
-        (x === 1 && y === 2)
+        (x === 1 && y === 2) ||
+        (x === 4 && y === 8) ||
+        (x === 4 && y === 9) ||
+        (x === 4 && y === 10) ||
+        (x === 5 && y === 7) ||
+        (x === 5 && y === 8) ||
+        (x === 5 && y === 9)
       ) {
         const cell = new Cell(1, x, y);
         map[x] = map[x] || [];
