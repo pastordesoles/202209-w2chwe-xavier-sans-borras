@@ -1,4 +1,4 @@
-import Cell from "../cellclass/classcell.js";
+import Cell from "../cellclass/Cell.js";
 
 const createMap = (rowCount, columnCount) => {
   const map = [];

@@ -1,4 +1,4 @@
-import Cell from "./classcell.js";
+import Cell from "./Cell.js";
 
 describe("Given the class Cell", () => {
   describe("When it receives 1, 1 and 1", () => {
