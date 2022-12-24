@@ -22,7 +22,7 @@ John Conway´s Game of Life with predefined patterns. Just click the Genesis but
 
 ## Screenshots
 
-![Screenshots](public/images/Screenshot.jpg)
+![Screenshots](public/images/screenshot.jpg)
 
 ## Contact
 
